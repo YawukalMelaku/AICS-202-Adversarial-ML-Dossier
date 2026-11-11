@@ -1,40 +1,27 @@
-# AICS-202 | Adversarial Machine Learning — Practical Lab Pack
+Original ICDFA-designed training exercises, completed for the AICS-202 Adversarial Machine Learning program.
 
-**Course Code:** AICS-202  
-**Subject:** Adversarial Machine Learning  
-**Author:** Yawukal Melaku Fentaw  
-**Context:** Original training exercises designed by the International Cybersecurity and Digital Forensics Academy (ICDFA)[cite: 1], completed and documented for formal assessment.
+Overview
+This repository contains four self-contained Jupyter notebooks exploring machine learning security, vulnerability assessment, and defense mechanisms using a local offline dataset.
 
----
+Content
+Lab 01: Baseline model training and threat modeling worksheet.
+Lab 02: FGSM evasion testing on an offline 8x8 digit classifier.
+Lab 03: Training-label poisoning and data integrity controls.
+Lab 04: Defensive retraining and adaptive robustness evaluation.
 
-## 📋 Table of Contents
-1. [Overview](#-overview)
-2. [Repository Structure](#-repository-structure)
-3. [Environment Setup & Installation](#️-environment-setup--installation)
-4. [Laboratory Curriculum](#-laboratory-curriculum)
-    * [Lab 01 – Baseline & Threat Modeling](#lab-01--baseline--threat-modeling)
-    * [Lab 02 – FGSM Evasion](#lab-02--fgsm-evasion)
-    * [Lab 03 – Training-Label Poisoning](#lab-03--training-label-poisoning)
-    * [Lab 04 – Defensive Retraining & Adaptive Evaluation](#lab-04--defensive-retraining--adaptive-evaluation)
-5. [Safety & Compliance Notice](#️-safety--compliance-notice)
-6. [Evidence & Deliverables](#-evidence--deliverables)
-7. [Authors & Acknowledgments](#-authors--acknowledgments)
+Setup
+python -m venv .venv
+# Activate .venv using your operating system instructions (e.g., source .venv/bin/activate)
+python -m pip install -r requirements.txt
+python -m notebook
 
----
+Work sequentially from Lab 01 to 04. Each notebook is self-contained and uses only the bundled scikit-learn digits dataset; no external dataset downloads are required.
 
-## 🔭 Overview
-This repository hosts the complete practical lab pack and technical assessment files for **AICS-202 (Adversarial Machine Learning)**. The curriculum explores security weaknesses, threat modeling, evasion vulnerabilities, data integrity risks, and defense limits for machine learning classifiers using a controlled, offline local sandbox.
+Lab Safety
+Run the notebooks only against your own locally trained classifiers and the bundled scikit-learn digits dataset. Do not test real-world systems without written authorization.
 
----
+Evidence
+Includes notebook execution outputs, performance curves, risk analyses, and the final assessment dossier report.
 
-## 📁 Repository Structure
-```text
-AICS-202-Adversarial-ML-Dossier/
-├── notebooks/
-│   ├── AICS202_Lab01_Baseline_Threat_Model.ipynb
-│   ├── AICS202_Lab02_FGSM_Evasion.ipynb
-│   ├── AICS202_Lab03_Poisoning_Data_Integrity.ipynb
-│   └── AICS202_Lab04_Robustness_Defences.ipynb
-├── report/
-│   └── AICS202_Final_Assessment_Report.md
-└── README.md
+Authors / Source Acknowledgments
+Exercises designed by the International Cybersecurity and Digital Forensics Academy (ICDFA)[cite: 1]. Completed and documented by Yawukal Melaku Fentaw.
