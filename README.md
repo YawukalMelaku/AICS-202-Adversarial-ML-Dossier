@@ -1,28 +1,36 @@
-# ICDFA AICS-202 - Practical Lab Pack
+# AICS-202 | Adversarial Machine Learning — Practical Lab Pack
 
-Original ICDFA-designed training exercises, dated October 2026.
+**Course Code:** AICS-202  
+**Subject:** Adversarial Machine Learning  
+**Author:** Yawukal Melaku Fentaw  
+**Context:** Original training exercises designed by the International Cybersecurity and Digital Forensics Academy (ICDFA), completed and documented for formal assessment.
 
-## Content
-- Lab 01 - Baseline and threat model
-- Lab 02 - FGSM on an offline 8x8 digit classifier
-- Lab 03 - Training-label poisoning and data integrity
-- Lab 04 - Defensive retraining and adaptive robustness evaluation
+---
 
-## Setup
-```bash
-python -m venv .venv
-# Activate .venv using your operating system instructions
-python -m pip install -r requirements.txt
-python -m notebook
-```
+## 📋 Table of Contents
+* [Overview](#overview)
+* [Repository Structure](#repository-structure)
+* [Environment Setup & Installation](#environment-setup--installation)
+* [Laboratory Curriculum](#laboratory-curriculum)
+* [Safety & Compliance Notice](#safety--compliance-notice)
+* [Evidence & Deliverables](#evidence--deliverables)
+* [Acknowledgments](#acknowledgments)
 
-Work sequentially from Lab 01 to 04. Each notebook is self-contained. No external dataset downloads are needed.
+---
 
-## Lab safety
-Run the notebooks only against your own locally trained classifiers and the bundled scikit-learn digits dataset. Do not test real-world systems without written authorization.
+## 🔭 Overview
+This repository hosts the complete practical lab pack and technical assessment files for **AICS-202 (Adversarial Machine Learning)**. The curriculum explores security weaknesses, threat modeling, evasion vulnerabilities, data integrity risks, and defense limits for machine learning classifiers using a controlled, offline local sandbox.
 
-## Evidence
-Keep notebook outputs, screenshots, short risk analyses and a reproducible run record.
+---
 
-## Authors / source acknowledgements
-ICDFA-created notebooks. External technical sources are cited in the accompanying laboratory guide; source code here is originally written for training.
+## 📁 Repository Structure
+```text
+AICS-202-Adversarial-ML-Dossier/
+├── notebooks/
+│   ├── AICS202_Lab01_Baseline_Threat_Model.ipynb
+│   ├── AICS202_Lab02_FGSM_Evasion.ipynb
+│   ├── AICS202_Lab03_Poisoning_Data_Integrity.ipynb
+│   └── AICS202_Lab04_Robustness_Defences.ipynb
+├── report/
+│   └── AICS202_Final_Assessment_Report.md
+└── README.md
